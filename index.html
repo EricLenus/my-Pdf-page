@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PDF Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f4f8;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 850px;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #00000015;
+        }
+        h1 {
+            color: #183153;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        iframe {
+            width: 100%;
+            height: 650px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .button {
+            display: inline-block;
+            margin: 20px 5px 0;
+            padding: 13px 20px;
+            background: #183153;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .button:hover {
+            background: #315b89;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My PDF Document</h1>
+        <p>
+            Welcome! You can read the document below
+            or open it separately.
+        </p>
+        <iframe
+            src="./memorial-program.pdf"
+            title="PDF document viewer">
+        </iframe>
+        <br>
+        <a
+            class="button"
+            href="./memorial-program.pdf"
+            target="_blank"
+            rel="noopener">
+            Open or Download PDF
+        </a>
+        <footer>
+            Thank you for visiting this page.
+        </footer>
+    </div>
+</body>
+</html>
